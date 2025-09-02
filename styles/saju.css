@@ -1,64 +1,189 @@
-@media (min-width: 448px) {
-}
 .saju__container {
-  background-image: url("../public/images/saju_table_bg.png");
-  background-color: #f3f2ef;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  width: 93.6vw;
+  position: relative;
+  width: 92vw;
   max-width: 419px;
-  height: 165.6vw;
-  max-height: 742px;
-  margin: 0 auto;
+  margin: -24px auto 0;
+  padding-bottom: 39px;
+  background: #f5f3ec;
   border: 3px solid #1b2f49;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.saju__table--border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.saju__table--border .border {
+  position: absolute;
+  display: block;
+  background-color: #2b557e;
+}
+.saju__table--border .border__top {
+  top: 6px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+.saju__table--border .border__left {
+  top: 0;
+  left: 6px;
+  width: 1px;
+  height: 100%;
+}
+.saju__table--border .border__right {
+  top: 0;
+  right: 6px;
+  width: 1px;
+  height: 100%;
+}
+.saju__table--border .border__bottom {
+  bottom: 6px;
+  left: 0;
+  width: 100%;
+  height: 1px;
 }
 .saju__table--title {
-  margin-top: 40px;
+  position: relative;
+  margin: 47px 0 31px 0;
   text-align: center;
   color: #424242;
 }
+.saju__table--title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  width: 67px;
+  height: 45px;
+  background: url("../public/images/pattern_left.png") no-repeat center center;
+  background-size: cover;
+}
+.saju__table--title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -20px;
+  right: 6px;
+  width: 67px;
+  height: 45px;
+  background: url("../public/images/pattern_right.png") no-repeat center center;
+  background-size: cover;
+}
 .saju__table--title h4 {
-  margin-bottom: 12px;
-  font-size: 16px;
+  margin-bottom: 14px;
+  font-size: 19px;
   font-weight: 400;
 }
 .saju__table--title h3 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
 }
 .saju__table--content {
-  margin: 0 auto;
-  margin-top: 32px;
+  margin: 0 22px 0;
+  text-align: center;
 }
 .saju__table--header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #000000;
 }
 .saju__table--header li {
-  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc((100% - 15%) / 4);
+  height: 54px;
+  border-right: 0.5px solid #8a8a8a8a;
+  font-size: 17px;
   font-weight: 700;
   color: #424242;
 }
-.saju__table--body {
-  margin-top: 8px;
-  height: 80%;
-  overflow-y: auto;
+.saju__table--header li:first-child {
+  width: 15%;
+  border-left: none;
+  border-right: 1px solid #000000;
+}
+.saju__table--header li:last-child {
+  border-right: 1px solid #000000;
 }
 .saju__table--list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
-  margin-bottom: 16px;
-  font-size: 14px;
+  border-bottom: 1px solid #000000;
+  font-size: 17px;
   font-weight: 400;
+}
+.saju__table__list--title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 15%;
+  min-height: 52px;
+  line-height: 17px;
+  border-right: 1px solid #000000;
+}
+.saju__table__list--title p.lg {
+  font-size: 12px;
+}
+.saju__table__list--title p.sm {
+  font-size: 9px;
 }
 .saju__table--item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 80%;
+  width: 85%;
+  background: #fff;
+}
+.saju__table--item li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+  min-height: 52px;
+  border-right: 0.5px solid #8a8a8a8a;
+}
+.saju__table--item li:last-child {
+  border-right: 1px solid #000000;
+}
+.saju__table__item--title {
+  padding: 6px;
+  line-height: 17px;
+}
+.saju__table__item--title p.lg {
+  font-size: 17px;
+}
+.saju__table__item--title p.sm {
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+.saju__table__item--title p.sm:last-child {
+  margin-bottom: 0;
+}
+.saju__table__item--title .color__box {
+  padding: 6px;
+  border-radius: 15px;
+}
+.saju__table__item--title .color__box {
+  color: #fff;
+}
+.saju__table__item--title .color__box.Fri {
+  color: #000000;
+  border: 1px solid #000000;
+}
+.saju__table__item--title .color__box p {
+  line-height: 1.1;
+}
+.saju__table__item--title .color__box p.lg {
+  font-size: 26px;
+}
+.saju__table__item--title .color__box p.sm {
+  margin: 0;
+  font-size: 8px;
+}
+.saju__table__item--title .color__box p.md {
+  line-height: 1.4;
+  font-size: 9px;
+  font-weight: 300;
 }
