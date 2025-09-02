@@ -2,6 +2,7 @@
 }
 .saju__container {
   background-image: url("../public/images/saju_table_bg.png");
+  background-color: #f3f2ef;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -30,10 +31,6 @@
 .saju__table--content {
   margin: 0 auto;
   margin-top: 32px;
-  width: 90%;
-  height: 65%;
-  background: rgba(255, 255, 255, 0.8);
-  padding-top: 16px;
 }
 .saju__table--header {
   display: flex;
