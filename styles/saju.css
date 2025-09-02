@@ -1,0 +1,67 @@
+@media (min-width: 448px) {
+}
+.saju__container {
+  background-image: url("../public/images/saju_table_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 93.6vw;
+  max-width: 419px;
+  height: 165.6vw;
+  max-height: 742px;
+  margin: 0 auto;
+  border: 3px solid #1b2f49;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.saju__table--title {
+  margin-top: 40px;
+  text-align: center;
+  color: #424242;
+}
+.saju__table--title h4 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.saju__table--title h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.saju__table--content {
+  margin: 0 auto;
+  margin-top: 32px;
+  width: 90%;
+  height: 65%;
+  background: rgba(255, 255, 255, 0.8);
+  padding-top: 16px;
+}
+.saju__table--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.saju__table--header li {
+  font-size: 14px;
+  font-weight: 700;
+  color: #424242;
+}
+.saju__table--body {
+  margin-top: 8px;
+  height: 80%;
+  overflow-y: auto;
+}
+.saju__table--list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.saju__table--item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
