@@ -52,9 +52,8 @@ const SajuTable = () => {
       Sun: "#ffc107",
     };
 
-    return dayColorMap[flag];
+    return dayColorMap[flag as Day] ?? "#fff";
   }
-
   return (
     <>
       <div className="relative w-[92vw] max-w-[419px] mt-[-5.3vw] mx-auto mb-0 pb-[8.8vw] bg-[#f5f3ec] border-[3px] border-solid border-[#1b2f49] sm:mt-[-24px] sm:pb-[39px]">
