@@ -7,7 +7,7 @@ const myPlugin: PluginCreator = ({ addComponents }) => {
       "&::before": {
         content: "''",
         position: "absolute",
-        top: "1.333vw",
+        top: "1.3vw",
         left: "1.6vw",
         width: "14.9vw",
         height: "10.1vw",
@@ -30,7 +30,7 @@ const myPlugin: PluginCreator = ({ addComponents }) => {
         content: "''",
         position: "absolute",
         top: "-4.5vw",
-        right: "1.333vw",
+        right: "1.3vw",
         width: "14.9vw",
         height: "10.1vw",
         backgroundImage: "url('/images/pattern_right.png')",

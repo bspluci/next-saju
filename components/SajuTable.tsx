@@ -59,7 +59,7 @@ const SajuTable = () => {
     <>
       <div className="relative w-[92vw] max-w-[419px] mt-[-5.3vw] mx-auto mb-0 pb-[8.8vw] bg-[#f5f3ec] border-[3px] border-solid border-[#1b2f49] sm:mt-[-24px] sm:pb-[39px]">
         <div className="absolute w-full h-full">
-          <span className="absolute block bg-[#2b557e] top-[1.3vw] left-[0] w-full h-[1px] sm:top[6px]"></span>
+          <span className="absolute block bg-[#2b557e] top-[1.3vw] left-[0] w-full h-[1px] sm:top-[6px]"></span>
           <span className="absolute block bg-[#2b557e] top-[0] left-[1.3vw] w-[1px] h-full sm:left-[6px]"></span>
           <span className="absolute block bg-[#2b557e] top-[0] right-[1.3vw] w-[1px] h-full sm:right-[6px]"></span>
           <span className="absolute block bg-[#2b557e] bottom-[1.3vw] left-[0] w-full h-[1px] sm:bottom-[6px]"></span>
@@ -102,9 +102,11 @@ const SajuTable = () => {
                         className="flex flex-col justify-center w-[25%] min-h-[11.7vw] p-[1.3vw] leading-[3.7vw] border-r-[1px] border-solid border-[#8a8a8a] sm:min-h-[52px] sm:p-[6px] sm:leading-[17px]"
                       >
                         <div
-                          className={`p-[1.3vw] rounded-[15px] text-[#fff] sm:p-[6px] bg-[${setBackgroundColor(
-                            content.day
-                          )}] ${content.day === "Fri" && "text-[#000] border-[1px] border-solid border-[#000]"}`}
+                          className={`p-[1.3vw] rounded-[15px] sm:p-[6px] bg-[${setBackgroundColor(content.day)}] ${
+                            content.day === "Fri"
+                              ? "text-[#000] border-[1px] border-solid border-[#000]"
+                              : "text-[#fff]"
+                          }`}
                         >
                           <p className="text-[1.8vw] leading-[1.1] sm:text-[8px]">{content.kr}</p>
                           <p className="text-[5.8vw] leading-[1.1] sm:text-[26px]">{content.ch}</p>
