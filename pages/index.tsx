@@ -29,7 +29,7 @@ export default function Home() {
           <div className="relative w-full h-[114.6vw] max-h-[513px]">
             <Image src="/images/saju_03.png" alt="talk girl" fill style={{ objectFit: "cover" }} />
           </div>
-          <p className="absolute text-center leading-[150%] font-normal tracking-[0.08vw] text-[4.2vw] top-[14.4vw] left-[15.4vw] w-[46.5vw] sm:top-[65px] sm:left-[69px] sm:text-[19px] sm:tracking-[0.3px] sm:w-[210px]">
+          <p className="absolute text-center leading-[150%] font-normal tracking-[0.08vw] text-[4.2vw] top-[14.4vw] left-[15.4vw] w-[47.5vw] sm:top-[65px] sm:left-[69px] sm:text-[19px] sm:tracking-[0.3px] sm:w-[213px]">
             제가 OO님의 사주를
             <br />
             보기 쉽게 표로 정리했어요
