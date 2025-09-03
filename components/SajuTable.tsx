@@ -15,7 +15,7 @@ const SajuTable = () => {
     return `${year}년 ${month}월 ${day}일 ${hours}:${minutes}`;
   }
 
-  function contentLineBreak(content: string): React.ReactNode {
+  function contentLineBreak(content): React.ReactNode {
     return content.kr.split(",").map((line, index) => {
       if (!line.trim() && !line.trim()) {
         return (
