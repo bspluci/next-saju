@@ -1,4 +1,23 @@
-const sajuData = {
+export interface SajuContent {
+  kr: string;
+  ch: string;
+  day: string;
+  flag: string;
+}
+
+export interface SajuItem {
+  titleCh: string;
+  titleKr: string;
+  content: SajuContent[];
+}
+
+export interface SajuDataType {
+  name: string;
+  birthday: string;
+  list: SajuItem[];
+}
+
+const sajuData: SajuDataType = {
   name: "김로켓",
   birthday: "1980.08.27 08:10",
   list: [

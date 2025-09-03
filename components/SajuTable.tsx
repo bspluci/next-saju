@@ -1,5 +1,5 @@
 import { useState } from "react";
-import sajuData from "../config/SajuData";
+import sajuData from "../config/SajuData.ts";
 
 const SajuTable = () => {
   const [sajuList] = useState(sajuData.list);
@@ -15,7 +15,7 @@ const SajuTable = () => {
     return `${year}년 ${month}월 ${day}일 ${hours}:${minutes}`;
   }
 
-  function contentLineBreak(content): React.ReactNode {
+  function contentLineBreak(content: SajuContent): React.ReactNode {
     return content.kr.split(",").map((line, index) => {
       if (!line.trim() && !line.trim()) {
         return (
