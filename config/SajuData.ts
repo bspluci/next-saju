@@ -1,8 +1,8 @@
 export interface SajuContent {
   kr: string;
   ch: string;
-  day: string;
-  flag: string;
+  day?: string;
+  flag?: string;
 }
 
 export interface SajuItem {
