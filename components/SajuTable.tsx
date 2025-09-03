@@ -1,7 +1,5 @@
-"use client";
-
 import { useState } from "react";
-import sajuData from "../config/SajuData";
+import sajuData from "../config/sajuData";
 
 const SajuTable = () => {
   const [sajuList] = useState(sajuData.list);
@@ -17,7 +15,7 @@ const SajuTable = () => {
     return `${year}년 ${month}월 ${day}일 ${hours}:${minutes}`;
   }
 
-  function contentLineBreak(content: string): HTMLElement {
+  function contentLineBreak(content: string): React.ReactNode {
     return content.kr.split(",").map((line, index) => {
       if (!line.trim() && !line.trim()) {
         return (
@@ -28,15 +26,15 @@ const SajuTable = () => {
       }
 
       return (
-        <>
-          <p className="text-[3.7vw] sm:text-[17px]" key={index}>
+        <div key={index}>
+          <p className="text-[3.7vw] sm:text-[17px]">
             {content.ch.split(",")[index].trim()}
             {index < content.kr.split(",").length - 1}
           </p>
           <p className="text-[2.6vw] sm:text-[12px]">
             ({line.trim()}){index < content.kr.split(",").length - 1}
           </p>
-        </>
+        </div>
       );
     });
   }
@@ -102,7 +100,8 @@ const SajuTable = () => {
                         className="flex flex-col justify-center w-[25%] min-h-[11.7vw] p-[1.3vw] leading-[3.7vw] border-r-[1px] border-solid border-[#8a8a8a] sm:min-h-[52px] sm:p-[6px] sm:leading-[17px]"
                       >
                         <div
-                          className={`p-[1.3vw] rounded-[15px] sm:p-[6px] bg-[${setBackgroundColor(content.day)}] ${
+                          style={{ backgroundColor: setBackgroundColor(content.day) }}
+                          className={`p-[1.3vw] rounded-[3.3vw] sm:rounded-[15px] sm:p-[6px] ${
                             content.day === "Fri"
                               ? "text-[#000] border-[1px] border-solid border-[#000]"
                               : "text-[#fff]"

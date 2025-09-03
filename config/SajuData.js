@@ -1,4 +1,4 @@
-const SajuData = {
+const sajuData = {
   name: "김로켓",
   birthday: "1980.08.27 08:10",
   list: [
@@ -75,4 +75,4 @@ const SajuData = {
   ],
 };
 
-export default SajuData;
+export default sajuData;
