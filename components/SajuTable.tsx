@@ -1,5 +1,5 @@
 import { useState } from "react";
-import sajuData from "../config/SajuData.ts";
+import sajuData from "../config/SajuData";
 
 const SajuTable = () => {
   const [sajuList] = useState(sajuData.list);
