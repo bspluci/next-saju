@@ -39,8 +39,10 @@ const SajuTable = () => {
     });
   }
 
+  type Day = "Mon" | "Tue" | "Wed" | "Thu" | "Fri" | "Sat" | "Sun";
+
   function setBackgroundColor(flag: string): string {
-    const dayColorMap = {
+    const dayColorMap: Record<Day, string> = {
       Mon: "#4a90e2",
       Tue: "#C23030",
       Wed: "#2f2f2f",
